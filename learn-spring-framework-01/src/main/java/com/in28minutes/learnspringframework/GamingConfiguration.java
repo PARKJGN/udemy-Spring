@@ -11,13 +11,11 @@ public class GamingConfiguration {
 
     @Bean
     public GamingConsole game(){
-        System.out.println("aa");
         return new PacmanGame();
     }
 
     @Bean
     public GameRunner gameRunner(){
-        System.out.println("bb");
         return new GameRunner(game());
     }
 
