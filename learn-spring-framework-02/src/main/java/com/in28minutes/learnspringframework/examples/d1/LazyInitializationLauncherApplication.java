@@ -1,12 +1,11 @@
 package com.in28minutes.learnspringframework.examples.d1;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 
 @Component
 class ClassA{
@@ -17,7 +16,9 @@ class ClassA{
 @Lazy
 class ClassB{
 
-    private ClassA classA;
+    private final ClassA classA;
+
+    @Autowired
     public ClassB(ClassA classA){
         //Logic
         System.out.println("Some Initialization logic");
