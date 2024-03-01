@@ -5,3 +5,10 @@
 - @Primary, @Qualifier
 - Dependency Injection(Constructor, Setter, Field)
 - @Component, @Bean
+
+2024-02-29
+- Lazy, eager
+- Bean Scope(prototype, singleton)
+- @PostConstruct, @PreDestroy
+- Jakarta CDI
+- Stereotype Annotation
