@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn-spring-framework-02" />
         <module name="learn-spring-boot" />
+        <module name="learn-jpa-and-hibernate" />
         <module name="learn-spring-framework-01" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="learn-jpa-and-hibernate" options="-parameters" />
       <module name="learn-spring-boot" options="-parameters" />
       <module name="learn-spring-framework-01" options="-parameters" />
       <module name="learn-spring-framework-02" options="-parameters" />
