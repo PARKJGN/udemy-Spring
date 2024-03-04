@@ -21,3 +21,8 @@
 - Profile
 - ConfigurationProperties
 - Embedded Server
+  
+2024-03-04 Spring Boot
+- JPA
+- Hibernate
+- JDBC
