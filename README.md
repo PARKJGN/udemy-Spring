@@ -26,3 +26,12 @@
 - JPA
 - Hibernate
 - JDBC
+
+2024-03-06 Spring Boot
+- HttpRequest
+- RequestParam
+- logging
+- Dispatcher-Servlet
+- Model
+- Session
+- Spring Validation(BindingResult, Errors, Command Bean)
