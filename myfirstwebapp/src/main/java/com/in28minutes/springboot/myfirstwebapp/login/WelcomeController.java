@@ -4,6 +4,8 @@ import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 @Controller
-public class LoginController {
+public class WelcomeController {
 
   /*  private Logger logger = LoggerFactory.getLogger(getClass());*/
 
@@ -27,18 +29,24 @@ public class LoginController {
         System.out.println(name);
 
     }*/
-    private final loginAuthenticationService authenticationService;
+    /*private final loginAuthenticationService authenticationService;
 
     public LoginController(loginAuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
+    }*/
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String gotoWelcomePage(HttpSession session){
+        session.setAttribute("name",getLoggedinUsername());
+        return "welcome";
     }
 
-    @RequestMapping(value = "login", method = RequestMethod.GET)
-    public String gotoLoginPage(){
-        return "login";
+    private String getLoggedinUsername(){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return authentication.getName();
     }
 
-    @RequestMapping(value = "login", method = RequestMethod.POST)
+    /*@RequestMapping(value = "login", method = RequestMethod.POST)
     public String gotoWelcomePage(@RequestParam String name, @RequestParam String password, Model model, HttpSession session){
 
         if(!authenticationService.authenticate(name, password)) {
@@ -53,5 +61,5 @@ public class LoginController {
         //password - dummy
 
         return "welcome";
-    }
+    }*/
 }
