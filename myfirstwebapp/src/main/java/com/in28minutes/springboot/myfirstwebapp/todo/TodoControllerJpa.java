@@ -26,7 +26,6 @@ public class TodoControllerJpa {
 
     @RequestMapping("list-todos")
     public String listAllTodos(Model model) {
-        //List<Todo> todos = todoService.findByUsername(getLoggenInUsername());
         List<Todo> todos = todoRepository.findByUsername(getLoggenInUsername());
         model.addAttribute("todos", todos);
         return "listTodos";
