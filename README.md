@@ -35,3 +35,13 @@
 - Model
 - Session
 - Spring Validation(BindingResult, Errors, Command Bean)
+
+2024-03-07 Spring Boot
+- jsp Fragment
+- Spring Security
+    - InMemoryUserDetailsManage(for Test)
+    - PasswordEncoder(BCrypt)
+    - SecurityContext
+- Spring Data JPA
+- JPA & H2
+- JpaRepository
