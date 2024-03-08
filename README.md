@@ -45,3 +45,10 @@
 - Spring Data JPA
 - JPA & H2
 - JpaRepository
+
+2024-03-08 Spring Boot
+- REST API
+- JSON
+- Response Statuses
+- Location Header
+- Exception
