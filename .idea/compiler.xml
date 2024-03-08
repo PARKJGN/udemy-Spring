@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn-spring-framework-02" />
         <module name="myfirstwebapp" />
+        <module name="restful-web-services" />
         <module name="learn-spring-boot" />
         <module name="learn-jpa-and-hibernate" />
         <module name="learn-spring-framework-01" />
@@ -21,6 +22,7 @@
       <module name="learn-spring-framework-01" options="-parameters" />
       <module name="learn-spring-framework-02" options="-parameters" />
       <module name="myfirstwebapp" options="-parameters" />
+      <module name="restful-web-services" options="-parameters" />
     </option>
   </component>
 </project>

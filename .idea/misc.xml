@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/learn-spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/learn-jpa-and-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/myfirstwebapp/pom.xml" />
+        <option value="$PROJECT_DIR$/restful-web-services/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
