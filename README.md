@@ -51,4 +51,4 @@
 - JSON
 - Response Statuses
 - Location Header
-- Exception
+- Exception Handler
