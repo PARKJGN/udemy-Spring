@@ -45,3 +45,23 @@
 - Spring Data JPA
 - JPA & H2
 - JpaRepository
+
+2024-03-08 Spring Boot
+- REST API
+- JSON
+- Response Statuses
+- Location Header
+- Exception Handler
+
+2024-03-11 Spring Boot
+- OpenAPI (Swagger)
+- Internationalization(i28n)
+- Versioning REST API
+  - Parameter
+  - Header
+  - Media type
+- HATEOAS
+- REST API filtering
+  - @JsonProperty
+  - @JsonFilter
+- Actuator
