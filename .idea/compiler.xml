@@ -8,13 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn-spring-framework-02" />
         <module name="myfirstwebapp" />
+        <module name="junit-in-5-steps" />
         <module name="learn-spring-boot" />
         <module name="restful-web-services (1)" />
         <module name="restful-web-services" />
+        <module name="mockito-demo" />
         <module name="learn-jpa-and-hibernate" />
         <module name="learn-spring-framework-01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="junit-5-steps" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -22,6 +27,7 @@
       <module name="learn-spring-boot" options="-parameters" />
       <module name="learn-spring-framework-01" options="-parameters" />
       <module name="learn-spring-framework-02" options="-parameters" />
+      <module name="mockito-demo" options="-parameters" />
       <module name="myfirstwebapp" options="-parameters" />
       <module name="restful-web-services" options="-parameters" />
       <module name="restful-web-services (1)" options="-parameters" />
